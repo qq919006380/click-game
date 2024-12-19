@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ff2e9f;
+  --neon-pink: #ff2e9f;
+  --neon-blue: #2de2e6;
+  --neon-purple: #9f2cf9;
+  --dark-bg: #0a0a0a;
+  --darker-bg: #070707;
+  --cyberpunk-gradient: linear-gradient(45deg, var(--neon-pink), var(--neon-purple));
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.mono {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.neon-text {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.cyberpunk-card {
+  background: rgba(10, 10, 10, 0.8);
+  border: 1px solid var(--neon-pink);
+  box-shadow: 0 0 10px var(--neon-pink);
+  backdrop-filter: blur(10px);
+}
